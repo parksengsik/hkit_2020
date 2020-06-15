@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+        <link rel="stylesheet" href="static/css/common.css">  
+        <title>
+            {% block title %}
+            Katia Soft
+            {% endblock %}
+        </title>
+    </head>
+    <body>
+        <header>
+            <nav id="gnb">로그인 | 회원가입</nav>
+            <h1>
+                KATIA SOFT
+            </h1>
+        </header>
+
+        <nav id="lnb">
+            <a href="index.html">홈</a>
+            <a href="getPosts.html">게시판</a>
+        </nav>       
+        
+        <main>
+            <nav id="snb">Menu</nav>
+            <section>
+                {% block section %}
+
+                {% endblock %}
+            </section>
+        </main>
+
+
+        <footer>Programmer E-mail : bss7068@naver.com</footer>
+    </body>
+</html>

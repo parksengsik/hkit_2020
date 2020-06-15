@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+        <link rel="stylesheet" href="static/css/common.css">  
+    </head>
+    <body>
+        <header>
+            <nav id="gnb">로그인 | 회원가입</nav>
+            <h1>KATIA SOFT</h1>
+        </header>
+
+        <nav id="lnb">
+            <a href="index.html">홈</a>
+            <a href="getPosts.html">게시판</a>
+        </nav>          
+        
+        <main>
+            <nav id="snb">Menu</nav>
+            <section>
+                <h2>게시물 상세정보</h2>
+                <article>
+                    <h3>{{post.subject}}</h3>
+                    <h4>작성자 : {{post.username}}</h4>
+                    <p>{{post.content}}</p>
+                </article>
+                <a href="setPost.html">수정</a>
+            </section>
+        </main>
+
+
+        <footer>Programmer E-mail : bss7068@naver.com</footer>
+    </body>
+</html>

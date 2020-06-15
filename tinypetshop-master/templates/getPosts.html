@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block section %}
+<h2>게시물 리스트</h2>
+<ul>
+    {% for post in posts %}
+    <li><a href="getPost.html?no={{post.no}}">{{post.subject}}</a> - {{post.content}}</li>
+    {% endfor %}
+
+</ul>
+<a href="addPost.html">추가</a>
+{% endblock %}
